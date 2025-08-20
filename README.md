@@ -54,3 +54,117 @@ sum[i][j] = matrix1[i][j] + matrix2[i][j]
 **Step 12**: Display the resulting sum matrix
 
 **Step 13**: End
+
+## 2. Algorithm: Multiplication of two matrices
+
+**Step 1** : Input Matrix Dimensions
+
+- Prompt the user to enter the number of rows and columns for the first matrix → R1, C1.
+
+- Prompt the user to enter the number of rows and columns for the second matrix → R2, C2.
+
+**Step 2** : Check Matrix Multiplication Validity
+
+If C1 != R2, then:
+
+- Output an error message: "Matrices cannot be multiplied." and terminate the program.
+
+**Step 3** : Create a 2D array matrix1[R1][C1] and input elements of first matrix.
+
+**Step 4** : Display First Matrix
+
+- Print the matrix in row-wise format using nested loops.
+
+**Step 5** : Create a 2D array matrix2[R2][C2] and input elements of Second Matrix.
+
+**Step 6** : Display Second Matrix
+
+- Print the matrix in row-wise format using nested loops.
+
+**Step 7** : Initialize Result Matrix. Create a 2D array product[R1][C2] to store the result.
+
+- Initialize all elements of product to 0.
+
+**Step 8** : Perform Matrix Multiplication
+
+- For each row i from 0 to R1 - 1:
+
+- For each column j from 0 to C2 - 1:
+
+- For each k from 0 to C1 - 1: product[i][j] += matrix1[i][k] * matrix2[k][j]
+
+**Step 9** : Display Result Matrix
+
+- Print the product matrix in row-wise format.
+
+## 3. Algorithm: Diagonal addition
+
+**Step 1** : Start
+
+**Step 2** : Input the size n of the square matrix
+
+**Step 3** : Declare a 2D array matrix[n][n]
+
+**Step 4** : Initialize sum = 0
+
+**Step 5** : For i = 0 to n - 1:
+- For j = 0 to n - 1:
+- Input matrix[i][j]
+
+**Step 6** : For i = 0 to n - 1:
+- Add matrix[i][i] to sum  // Primary diagonal
+- Add matrix[i][n - 1 - i] to sum  // Secondary diagonal
+
+**Step 7** : If n is odd:
+- Subtract matrix[n / 2][n / 2] from sum  // Remove duplicated center element
+
+**Step 8** : Output sum as the sum of both diagonals
+
+**Step 9** : End the program.
+
+## 4. Algorithm: Transpose of a matrix
+
+**Step 1** : Start
+
+**Step 2** : Input number of rows and columns → rows, cols
+
+**Step 3** : Declare a 2D array matrix[rows][cols] and another 2D array transpose[cols][rows]
+
+**Step 4** : Input matrix elements:
+- For i = 0 to rows - 1:
+- For j = 0 to cols - 1:
+- Input matrix[i][j]
+
+**Step 5** : Display original matrix:
+- For i = 0 to rows - 1:
+- For j = 0 to cols - 1:
+- Print matrix[i][j]
+
+**Step 6** : Compute transpose:
+- For i = 0 to rows - 1:
+- For j = 0 to cols - 1:
+- Set transpose[j][i] = matrix[i][j]
+
+**Step 7** : Display transpose matrix:
+- For i = 0 to cols - 1:
+- For j = 0 to rows - 1:
+- Print transpose[i][j]
+
+**Step 8** : End the program.
+
+## Conclusion:
+
+In this experiment, we studied and implemented the concept of 2D arrays in C++, specifically focusing on their application in matrix operations. Through programs like matrix multiplication, diagonal addition, and matrix transpose, we gained a clear understanding of how to:
+
+- Declare and initialize 2D arrays
+
+- Input and display matrix elements
+
+- Perform various operations by accessing elements using row and column indices
+
+Thus, the experiment successfully demonstrated the practical use of 2D arrays for matrix operations in C++.
+
+
+
+
+
